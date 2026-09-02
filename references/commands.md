@@ -34,17 +34,19 @@ Mutating commands prompt by default. After explicit conversation confirmation, r
 
 ## Raw data and exports
 
+Write downloaded health data outside a source checkout or under its ignored `exports/` directory. Never commit a user's FIT, GPX, TCX, native Watchletic, NDJSON, CSV, or bulk ZIP files.
+
 ```sh
 watchletic activities raw ACTIVITY_ID --format json --json
-watchletic activities raw ACTIVITY_ID --format ndjson --output activity.ndjson --json
-watchletic activities raw ACTIVITY_ID --format csv --output activity.csv --json
-watchletic activities export ACTIVITY_ID --format fit --output activity.fit --json
-watchletic activities export ACTIVITY_ID --format gpx --output activity.gpx --json
-watchletic activities export ACTIVITY_ID --format tcx --output activity.tcx --json
-watchletic activities export ACTIVITY_ID --format alpha1Csv --output alpha1.csv --json
+watchletic activities raw ACTIVITY_ID --format ndjson --output exports/activity.ndjson --json
+watchletic activities raw ACTIVITY_ID --format csv --output exports/activity.csv --json
+watchletic activities export ACTIVITY_ID --format fit --output exports/activity.fit --json
+watchletic activities export ACTIVITY_ID --format gpx --output exports/activity.gpx --json
+watchletic activities export ACTIVITY_ID --format tcx --output exports/activity.tcx --json
+watchletic activities export ACTIVITY_ID --format alpha1Csv --output exports/alpha1.csv --json
 watchletic data export create --file bulk-export.json --json
 watchletic data export status JOB_ID --json
-watchletic data export download JOB_ID --output watchletic-data.zip --json
+watchletic data export download JOB_ID --output exports/watchletic-data.zip --json
 ```
 
 Treat `raw_data_unavailable` as a real cloud-data gap. Do not suggest an Apple Health/HealthKit backfill. Bulk manifests may mark individual activities missing or format-unavailable; report partial exports.
