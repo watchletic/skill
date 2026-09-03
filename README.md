@@ -12,6 +12,4 @@ Install the skill from GitHub:
 npx skills add watchletic/skill
 ```
 
-A future CLI command may install a pinned GitHub release.
-
 The skill keeps AI inference agent-side, starts from bounded deterministic summaries, and requires explicit confirmation before mutations.
