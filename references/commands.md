@@ -30,6 +30,14 @@ watchletic live settings --json
 watchletic live sessions --json
 ```
 
+`watchletic context --json` is the normal starting point for agent work. It contains compact summaries rather than complete analytics curves or structured-workout steps. Drill down only when needed:
+
+```sh
+watchletic activities get ACTIVITY_ID --json
+watchletic structured-workouts get STRUCTURED_WORKOUT_ID --json
+watchletic analytics get --json
+```
+
 Mutating commands prompt by default. After explicit conversation confirmation, rerun the exact command with `--yes --json` when the environment is non-interactive.
 
 ## Raw data and exports

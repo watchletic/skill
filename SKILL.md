@@ -7,7 +7,7 @@ description: Use the official Watchletic CLI to inspect, analyze, export, and sa
 
 Use the official `watchletic` CLI. Never query Supabase, inspect Watchletic storage, or construct undocumented HTTP requests.
 
-Start with `watchletic auth status --json`, then use `watchletic context --json` for bounded, deterministic summaries. Read [references/commands.md](references/commands.md) for exact commands and [references/data-model.md](references/data-model.md) when interpreting fields or availability.
+Start with `watchletic auth status --json`, then use `watchletic context --json` for bounded, deterministic summaries. The context intentionally omits full curves, raw samples, private live-tracking recipients, and complete structured-workout steps; fetch a referenced activity or structured workout only when the question requires it. Read [references/commands.md](references/commands.md) for exact commands and [references/data-model.md](references/data-model.md) when interpreting fields or availability.
 
 For analysis, explain what the deterministic data supports, distinguish observations from inference, and report incomplete cloud data instead of filling gaps. Request raw channels only when a specific question requires them. Follow [references/analysis-and-scheduling.md](references/analysis-and-scheduling.md).
 

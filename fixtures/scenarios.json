@@ -83,7 +83,7 @@
       "name": "club-membership-lapsed",
       "errorCode": "premium_required",
       "must": [
-        "explain Premium requirement",
+        "explain Watchletic Club membership requirement",
         "allow status or revocation guidance"
       ],
       "mustNot": ["bypass the API"]

@@ -11,3 +11,5 @@ Structured workouts are date-based and may be unscheduled. Their nested parts de
 Routes contain coordinate/elevation arrays. Layouts and Bluetooth devices represent logical cloud profiles. Pairing and live hardware control are not public data operations.
 
 Integration responses are sanitized. Never request or expect provider access tokens, refresh tokens, storage keys, internal jobs, or raw database rows.
+
+Agent context schema version 2 summarizes the 90-day analytics window into selected duration highlights and estimate-support activity IDs. Readiness includes recent entries and seven-day comparisons. Upcoming structured workouts include computed step counts, estimated duration/distance, target types, and IDs for focused retrieval rather than their full parts.
