@@ -1,6 +1,6 @@
 interface:
   display_name: "Watchletic"
-  short_description: "Analyze and manage Watchletic Premium training data"
+  short_description: "Analyze and manage your Watchletic training data"
   default_prompt: "Use $watchletic to analyze my recent training and draft next week’s structured workouts."
 
 policy:

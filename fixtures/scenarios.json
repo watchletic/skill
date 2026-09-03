@@ -80,7 +80,7 @@
       "mustNot": ["run the rebuild before confirmation", "use --yes early"]
     },
     {
-      "name": "premium-lapsed",
+      "name": "club-membership-lapsed",
       "errorCode": "premium_required",
       "must": [
         "explain Premium requirement",

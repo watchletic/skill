@@ -1,6 +1,6 @@
 ---
 name: watchletic
-description: Use the official Watchletic CLI to inspect, analyze, export, and safely change a Premium user's Watchletic cloud data, including settings, activities, readiness, analytics, training load, integrations, routes, layouts, devices, and structured workouts. Use when a user asks about their Watchletic training, wants files or raw channels, or wants structured workouts drafted or scheduled.
+description: Use the official Watchletic CLI to inspect, analyze, export, and safely change a Watchletic user's cloud data, including settings, activities, readiness, analytics, training load, integrations, routes, layouts, devices, and structured workouts. Use when a user asks about their Watchletic training, wants files or raw channels, or wants structured workouts drafted or scheduled.
 ---
 
 # Watchletic
@@ -15,4 +15,4 @@ Use “structured workouts” exclusively. Before suggesting them, ask about goa
 
 Get explicit user confirmation immediately before every settings change, structured-workout mutation, deletion, integration action, readiness/training-load change, or analytics rebuild. Never pass `--yes` until that confirmation has been given in the conversation. A prior general request to analyze or help is not mutation confirmation.
 
-Watchletic does not host an LLM. Keep analysis and inference agent-side. Respect Read-only sessions and Premium errors; explain the limitation without trying alternate credentials or data paths.
+Watchletic does not host an LLM. Keep analysis and inference agent-side. Respect Read-only sessions and Watchletic Club access errors; explain the limitation without trying alternate credentials or data paths.
