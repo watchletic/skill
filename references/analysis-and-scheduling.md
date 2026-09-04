@@ -1,6 +1,6 @@
 # Analysis and scheduling
 
-Begin with:
+Begin with `get_training_context`. With the CLI fallback, use:
 
 ```sh
 watchletic context --from YYYY-MM-DD --to YYYY-MM-DD --timezone AREA/CITY --json
@@ -10,7 +10,7 @@ The context combines training-relevant settings, recent activity metadata, readi
 
 Analyze in this order:
 
-1. Check `completeness`, the requested range/timezone, and Premium/access status.
+1. Check `completeness`, the requested range/timezone, and Watchletic Club/access status.
 2. Summarize actual frequency, duration, distance, training-load pattern, readiness, and scheduled work.
 3. Use Watchletic's deterministic analytics and selected training-load sources before making qualitative inferences.
 4. State uncertainty where activities are excluded, raw samples are absent, dates are sparse, or analytics are processing.

@@ -5,3 +5,11 @@ interface:
 
 policy:
   allow_implicit_invocation: true
+
+dependencies:
+  tools:
+    - type: mcp
+      value: watchletic
+      description: "Secure access to the user's Watchletic training data and actions"
+      transport: streamable_http
+      url: "https://api.watchletic.com/mcp"
