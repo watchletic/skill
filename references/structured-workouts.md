@@ -14,7 +14,7 @@ Do not diagnose or override health advice. If constraints make a suggestion unsa
 
 Create a batch with `operations`. Each create contains `title`, `activityType`, `locationType`, `isMetric`, `isRecurring`, `parts`, nullable `date`, nullable `recurringUntil`, and optional nullable `completedAt`. The integration origin is server-managed and must not be supplied. Updates and deletes include the exact current `expectedRevision`.
 
-With MCP, call `validate_structured_workout_batch`, then `preview_structured_workout_change` with the validated batch. With the CLI fallback, always preview:
+With MCP, call `validate_structured_workout_batch`, then `preview_structured_workout_batch` with the validated batch. With the CLI fallback, always preview:
 
 ```sh
 watchletic structured-workouts validate --file proposed-workouts.json --json
@@ -22,7 +22,7 @@ watchletic structured-workouts validate --file proposed-workouts.json --json
 
 Show the returned diff in useful language, including dates, titles, activity types, recurrence, replacements, and deletions. The preview is not permission to mutate. Ask for explicit confirmation after showing it.
 
-Only after confirmation, use `apply_watchletic_change` with the unchanged action and confirmation token. With the CLI fallback:
+Only after confirmation, use `apply_structured_workout_batch` with the unchanged action fields and confirmation token. With the CLI fallback:
 
 ```sh
 watchletic structured-workouts apply --file proposed-workouts.json --yes --json

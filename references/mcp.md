@@ -13,6 +13,6 @@ All mutations use this sequence:
 3. Ask for explicit confirmation immediately after showing that preview.
 4. Call the matching apply tool with the unchanged action and confirmation token.
 
-Use `apply_watchletic_change` for first-party writes, `apply_watchletic_deletion` for deletions, `apply_integration_action` for connected-service actions, and `apply_integration_disconnect` for disconnecting a service. Never apply after an ambiguous reply, after changing the payload, or using an expired preview. Preview again instead.
+Every mutation operation has a matching focused preview/apply pair, such as `preview_activity_update` and `apply_activity_update`. Pass the unchanged action fields and confirmation token to the matching apply tool. Never apply after an ambiguous reply, after changing the payload, or using an expired preview. Preview again instead.
 
 A Read-only connection can analyze and preview but cannot apply. If an apply tool returns an authorization challenge, explain that Full access is needed and let the user reconnect through Watchletic. Do not seek alternate credentials.
